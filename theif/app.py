@@ -5,7 +5,7 @@ from pyautogui import hotkey
 
 
 notified = False
-
+ifKey = getenv("iftt_API_KEY")
 
 def checkIfConnected():
     cmd = "pmset -g batt"
@@ -21,10 +21,10 @@ def checkIfConnected():
 def scream():
     global notified
     if not notified:
-        system("curl https://maker.ifttt.com/trigger/\{macbook_unplugged\}/with/key/lRKQZyKM05ukMcnDtGadid6A_x_Rf5_t2LhRKjOOTyJ")
+        system(f"curl https://maker.ifttt.com/trigger/\macbook_unplugged\/with/key/{ifKey}")
         system("say 'let go let go let go'")
         system("say 'i have notified the owner, he will be back soon'")
-        system("babe ping phone")
+        system("babe ping phone"). #this is a seperate python custom file (you can delete this)
     system("say 'plug me back in'")
     notified = True
 
