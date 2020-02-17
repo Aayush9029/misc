@@ -7,7 +7,7 @@ Repo for my personal programs, misc files, notes and ideas that gets automatical
 
 
 
-What i use:
+What i use (FAQ):
 
 ​	OS: Arch, Kernel: Linux **ofc**	
 
@@ -18,7 +18,12 @@ What i use:
   - Light-line
   - Jedi
 
-> #### Does it matter ? 
+- Arch linux cache cleaning and updating [script](https://github.com/cubanpit/cleanupdate.git)
+> `git clone https://github.com/cubanpit/cleanupdate.git`
+
+
+
+> #### Does All of this matter ? 
 
 --> Nope, Just a tool.
 
